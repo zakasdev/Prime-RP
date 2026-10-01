@@ -1,0 +1,8 @@
+{
+  "name": "prime-rp-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prime RP community website with secure admin panel",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" }
+}

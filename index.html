@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050b14"><meta name="description" content="Prime RP — عِش قصتك، واكتب فصلك القادم في عالم MTA:SA Roleplay.">
+  <title>Prime RP | عِش قصتك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar"><a class="brand" href="#home"><img src="prime-logo.png" alt="Prime RP"><span>ROLEPLAY<br><small>LOS SANTOS • EST. 2024</small></span></a>
+    <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+    <nav class="nav"><a href="#home" class="active">الرئيسية</a><a href="#rules">القوانين</a><a href="#store">المتجر</a><a href="#suggestions">الاقتراحات</a><a href="#staff">الإدارة</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-backdrop"></div><div class="hero-content">
+        <div class="eyebrow"><i></i> مدينة واحدة، قصص لا تنتهي</div>
+        <h1>قصتك تبدأ<br><span>من هنا.</span></h1>
+        <p>اصنع هويتك، ابنِ إمبراطوريتك، واكتب فصلاً لا يُنسى<br class="desktop"> في عالم Prime RP.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#join">ابدأ رحلتك <span>←</span></a><a class="button button-ghost" href="#rules">اكتشف المدينة <span>⌄</span></a></div>
+        <div class="server-card" id="join"><div class="server-state"><span class="status-dot"></span><div><b id="statusLabel">السيرفر متصل</b><small id="playerCount">متصل الآن · 128 لاعباً</small></div></div><div class="server-ip"><small>عنوان السيرفر</small><div dir="ltr"><code>5.39.63.207:6014</code><button id="copyIp" aria-label="نسخ عنوان السيرفر">⧉</button></div></div><a class="discord-join" href="https://discord.gg/sY3wRvwGE" target="_blank" rel="noreferrer">انضم إلى Discord <span>↗</span></a></div>
+        <div class="hero-foot"><span>01 / 05</span><span class="hero-line"></span><span>LOS SANTOS, SAN ANDREAS</span></div>
+      </div><div class="hero-side"><span>ROLEPLAY YOUR WAY</span><b>PRIME<br>RP</b><span>EST. 2024</span></div>
+    </section>
+    <section class="ticker"><span>★ &nbsp; عِش القصة التي تستحقها</span><span>PRIME ROLEPLAY</span><span>★ &nbsp; مجتمع يصنع الفرق</span><span>LOS SANTOS, SAN ANDREAS</span></section>
+    <section class="section intro" id="about"><div class="section-kicker">01 — عن المدينة</div><div class="intro-grid"><h2>مدينةٌ تنبض<br>بـ<span>الحياة.</span></h2><div><p>في Prime RP، كل قرار يصنع فرقاً. ابدأ من الصفر، ابحث عن مكانك، واترك بصمتك في مجتمع يكتب قصته معاً.</p><a href="#rules" class="text-link">تعرّف على المدينة <span>←</span></a></div></div><div class="stats"><div><b>24/7</b><small>عالم مفتوح</small></div><div><b>∞</b><small>فرص جديدة</small></div><div><b>ONE</b><small>مجتمع واحد</small></div></div></section>
+    <section class="section rules-section" id="rules"><div class="section-heading"><div><div class="section-kicker">02 — أساس التجربة</div><h2>قوانين المدينة</h2></div><p>احترم القواعد، وامنح الجميع تجربة لعب ممتعة وعادلة.</p></div><div class="rules-grid" id="rulesGrid"></div></section>
+    <section class="section store-section" id="store"><div class="section-heading"><div><div class="section-kicker">03 — متجر المدينة</div><h2>ارتقِ بتجربتك</h2></div><a class="text-link" href="https://discord.gg/sY3wRvwGE" target="_blank" rel="noreferrer">استفسر عبر Discord ↗</a></div><div class="store-grid" id="storeGrid"></div></section>
+    <section class="section suggestion-section" id="suggestions"><div class="suggestion-copy"><div class="section-kicker">04 — صوتك يصنع الفرق</div><h2>فكرةٌ منك،<br><span>مدينةٌ أفضل.</span></h2><p>شاركنا اقتراحك. سيظهر للمجتمع بعد إرساله، ويمكن للفريق مراجعته.</p><form id="suggestionForm"><label for="suggestionName">اسمك</label><input id="suggestionName" maxlength="32" placeholder="كيف نناديك؟"><label for="suggestionText">اقتراحك</label><textarea id="suggestionText" required maxlength="400" placeholder="أخبرنا بفكرتك..." rows="3"></textarea><button class="button button-primary" type="submit">إرسال الاقتراح <span>←</span></button><small class="form-note" id="suggestionNote"></small></form></div><div class="suggestion-list-wrap"><div class="list-title"><span>اقتراحات المجتمع</span><small id="suggestionTotal">0 اقتراحات</small></div><div id="suggestionList" class="suggestion-list"></div></div></section>
+    <section class="section staff-section" id="staff"><div class="section-heading"><div><div class="section-kicker">05 — من يصنع التجربة</div><h2>فريق Prime</h2></div><p>نحن هنا لنضمن أن تكون قصتك في المدينة على أفضل وجه.</p></div><div class="staff-grid" id="staffGrid"></div></section>
+  </main>
+    <footer><a class="brand footer-brand" href="#home"><img src="prime-logo.png" alt=""><span>ROLEPLAY<br><small>LOS SANTOS • EST. 2024</small></span></a><p>© 2025 PRIME RP. صُنعت قصتك هنا.</p><button class="admin-link" id="adminOpen">إدارة الموقع</button></footer>
+  <audio id="themeAudio" src="prime-theme.mp3" loop preload="auto" autoplay></audio>
+  <dialog id="adminDialog" class="modal"><div class="modal-head"><div><small>PRIME RP • إدارة الموقع</small><h3 id="adminTitle">لوحة التحكم</h3></div><button class="close-modal" data-close>×</button></div><div id="adminLogin"><p id="adminLoginMessage">أدخل رمز الإدارة للمتابعة.</p><form id="adminLoginForm"><input id="adminPassword" type="password" autocomplete="current-password" placeholder="رمز الإدارة" required><button class="button button-primary" type="submit">فتح لوحة التحكم <span>←</span></button><small id="adminError" class="error-text"></small></form></div><div id="adminPanel" hidden><div class="admin-panel-banner"><span class="status-dot"></span><div><b>وضع الإدارة</b><small>التغييرات تُحفظ وتظهر لجميع زوار الموقع</small></div></div><div class="admin-tabs"><button class="selected" data-tab="overview">الحالة</button><button data-tab="products">المتجر</button><button data-tab="suggestions">الاقتراحات</button><button data-tab="staff">الفريق</button></div><div id="adminContent"></div><button class="admin-logout" id="adminLogout">قفل لوحة الإدارة</button></div></dialog>
+  <div id="toast" class="toast" role="status"></div>
+<!-- استدعاء مكتبات Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+<script>
+  // إعدادات مشروعك في Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyDedD8_LQRdYSzqlWc3Q_iNs0aDaBAz89w8",
+    authDomain: "prime-rp-ff293.firebaseapp.com",
+    projectId: "prime-rp-ff293",
+    storageBucket: "prime-rp-ff293.firebasestorage.app",
+    messagingSenderId: "892434910855",
+    appId: "1:892434910855:web:43897f2f52ed49f1cef222",
+    measurementId: "G-HV4G4MB4H8"
+  };
+
+  // ربط واستدعاء قاعدة البيانات
+  firebase.initializeApp(firebaseConfig);
+  window.db = firebase.firestore();
+</script>
+
+  <script src="app.js"></script>
+</body></html>
